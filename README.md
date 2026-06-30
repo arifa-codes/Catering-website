@@ -53,9 +53,10 @@ Catering-Service/
 │   └── script.js
 │
 ├── images/
-│   ├── banner.jpg
-│   ├── gallery/
-│   └── menu/
+│   ├── home Page.jpg
+│   ├── about page.png
+│   ├── FAQ .png
+│   └── contact.png
 │
 └── README.md
 ```
