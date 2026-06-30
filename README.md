@@ -8,7 +8,7 @@ A modern, responsive, and user-friendly Catering Service Website built using HTM
 
 > Home Page
 
-![Home Page](home-page.png)
+![Home Page](home page.png)
 
 ---
 
