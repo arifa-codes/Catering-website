@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Catering</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                </form>
+            </div>
+        </div>
+    </nav>
+
+      <!-- background -->
+    <section>
+        <div class="container-fluid"
+            style="background-image: url(https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); background-position: center; height: 70vh;  background-repeat: no-repeat;  background-size: cover;">
+            <div class="row p-5">
+                <div class="col text-center bg-dark  text-light py-5">
+                    <h1>Contact Us </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">More</button></a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- form -->
+     <section class="my-5">
+        <div class="container">
+            <h2 class="text-center">Contact Form</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="image/contact-form.png" alt="">
+                </div>
+                  <div class="col-lg-6 shadow p-5 rounded">
+                  <div>
+                     <label for="">Name:</label>
+                   <input id="name" class="my-2 form-control" type="text" placeholder="Enter Name" >
+                  </div>
+                   <div>
+                     <label for="">Number:</label>
+                   <input id="number" class="my-2 form-control" type="number" placeholder="Enter Number" >
+                  </div>
+                   <div>
+                     <label for="">Email:</label>
+                   <input id="email" class="my-2 form-control" type="email" placeholder="Enter Email" >
+                  </div>
+                   <div>
+                     <label for="">Address:</label>
+                   <textarea class="form-control" id="address" rows="3" placeholder="Enter Address" ></textarea>
+                  </div>
+                  <div>
+                    <button onclick="submit()" type="button" class="btn btn-dark my-2">Submit</button>
+                  </div>
+
+                </div>
+
+            </div>
+        </div>
+     </section>
+
+
+<!-- modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">About Us</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nisi eius laborum optio distinctio tempore vitae ducimus quae! Reiciendis, nesciunt dolorum accusamus unde voluptatem odit minima sed consectetur quae aperiam!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- footer -->
+    <section class="my-3 bg-dark text-white text-center py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h6>All right reseved@2026</h6>
+                    <p id="datetime"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        document.getElementById("datetime").innerText = new Date();
+    </script>
+
+    <!-- aos  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+        <!-- form script -->
+         <script>
+            function submit(){
+                let name = document.getElementById("name").value;
+                 let number  = document.getElementById("number").value;
+                  let email  = document.getElementById("email").value;
+                   let address = document.getElementById("address").value;
+
+                   if (name == ""){
+                    alert("please submit form")
+                   }
+                   else if (number == ""){
+                    alert("please submit form")
+                   }
+                     else if (email == ""){
+                    alert("please submit form")
+                   }
+                     else if (address == ""){
+                    alert("please submit form")
+                   }
+                   else{
+                    alert("Thanks for submit ")
+                   }
+
+            }
+         </script>
+</body>
+
+</html>
